@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img\ leptop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the links */
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent */
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 10px; /* Add margin to space the links */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#sections > .section {
+    display: block;
+    min-height: 100vh;
+    padding: 70px 20px; /* To avoid content behind the navbar */
+    color: white; /* Ensure text is readable on dark background */
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header .content {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+}
+
+header .btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+header .btn:hover {
+    background-color: darkgreen;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-photo {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover; /* Ensure the image fits the container */
+    border-radius: 10px; /* Optional: make the image round */
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
